@@ -21,13 +21,13 @@ pipeline{
               }
             }
           }
-     //stage("Quality gate") {
+     /* stage("Quality gate") {
             steps {
                 waitForQualityGate abortPipeline: true
             }
         }
     
-     stage('Deploy to artifactory'){
+        stage('Deploy to artifactory'){
         steps{
         rtUpload(
          serverId : 'ARTIFACTORY_SERVER',
@@ -42,7 +42,7 @@ pipeline{
          
       )
       }
-     }//
+     } */
   }
         post {  
          always {  
